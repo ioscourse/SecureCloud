@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<link href="static/css/index.css" rel="stylesheet" type="text/css">
+
+	<script src="static/dart/driver.dart" type="application/dart"></script>
+	<script type="text/javascript">
+		if (navigator.webkitStartDart)
+		{
+			navigator.webkitStartDart();
+		} else
+		{
+			window.addEventListener("DOMContentLoaded", function() {
+				var scriptElm = document.createElement("script");
+				scriptElm.type = "text/javascript";
+				scriptElm.src = "static/dart/driver.dart.js";
+				scriptElm.defer = "defer";
+				document.body.appendChild(scriptElm);
+			}, false);
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<div id="backButton">Secure Cloud</div>
+		<a href="#" id="menu">a</a>
+	</header>
+	<nav id="mainNav">
+		<ul>
+			<a href="#" id="sendBtn" class="selected"><li>Send</li></a>
+			<a href="#" id="requestBtn"><li>Request</li></a>
+			<a href="#" id="setAsBaseBtn"><li>Base Cloud</li></a>
+		</ul>
+	</nav>
+	<section id="mainSection">
+		<nav>
+			<div id="newFile" class="button2">CREATE FILE</div>
+			<div id="otherFile" class="button2">OTHER</div>
+		</nav>
+		<p>Files</p>
+		<ul id="fileList"></ul>
+	</section>
+	<footer>
+	</footer>
+	
+	<template id="template_textFileEditor">
+		<div class="textFileEditorBox">
+			<p>File Editor:</p>
+			<input class="filename" placeholder="file_name.txt" />
+			<br />
+			<textarea class="fileContents" rows="6" placeholder="Type your file contents here."></textarea>
+			<br />
+			<input type="button" value="Save" class="saveBtn button" />
+			<input type="button" value="Delete" class="deleteBtn button" />
+		</div>
+	</template>
+	
+	<template id="template_loadingBox">
+		<div class="loadingBox"></div>
+	</template>
+</body>
+</html>

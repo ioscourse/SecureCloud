@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+		<title>iOS</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<link href="static/css/index.css" rel="stylesheet" type="text/css">
+		
+		<style type="text/css">
+			#mainSection {
+				background: #dadada;
+				overflow: auto;
+				width: 100%;
+				height: 100% ;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				box-sizing: border-box;
+			}
+			
+			#fileList {
+				margin: 0px;
+			}
+			
+			#fileList li {
+				background-color: #fff;
+				border-top: 1px solid #ccc;
+			}
+			
+			#fileList > li:last-of-type {
+	border-bottom: 1px solid #ccc;
+}
+			
+			#describer {
+				font-size: 11px;
+				font-weight: bold;
+				color: #444;
+				padding: 3px 10px;
+				border-bottom: 1px solid #484848;
+				background: #ffffff;
+
+background: -moz-linear-gradient(top,  #ffffff 0%, #b5b5b5 100%);
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#b5b5b5));
+
+background: -webkit-linear-gradient(top,  #ffffff 0%,#b5b5b5 100%);
+
+background: -o-linear-gradient(top,  #ffffff 0%,#b5b5b5 100%);
+
+background: -ms-linear-gradient(top,  #ffffff 0%,#b5b5b5 100%);
+
+background: linear-gradient(to bottom,  #ffffff 0%,#b5b5b5 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#b5b5b5',GradientType=0 );
+
+
+			}
+		</style>
+	</head>
+	
+	<body>
+		<section id="mainSection">
+			<nav id="describer">FILES</nav>
+			<ul id="fileList"></ul>
+			<script type="text/javascript" src="static/js/ios.js" defer="defer"></script>
+		</section>
+	</body>
+</html>
